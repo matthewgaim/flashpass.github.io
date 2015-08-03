@@ -6,29 +6,29 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: 'Disney World',
+    lastText: 'Go to the enchanted world',
+    face: 'http://4alltravelers.madadventuresinc.netdna-cdn.com/wp-content/uploads/2015/04/disney-world-walt-disney-world-34101377-500-334.jpg'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: 'Lego Land',
+    lastText: 'Welcome to lego land! The land of legos!',
+    face: 'http://www.legoland.com.my/Global/LEGOLAND%20MY/2012/Explore/Activities/The%20Beginning/LEGOLANDArc2%20resize.jpg'
   }, {
     id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
+    name: 'Disney Land',
+    lastText: "It's the land of Disney!",
+    face: 'https://secure.parksandresorts.wdpromedia.com/resize/mwImage/1/900/360/90/wdpromedia.disney.go.com/media/wdpro-assets/dlr/parks-and-tickets/destinations/disneyland-park/disneyland-00-full.jpg?15052013102112'
   }, {
     id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
+    name: 'Great America',
+    lastText: 'A part of the great America!',
+    face: 'http://brotherrice.org/wp-content/uploads/2012/09/Six_Flags_Great_America.jpeg'
   }, {
     id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+    name: 'Six Flags',
+    lastText: 'There are six flags on our property.',
+    face: 'http://www3.nd.edu/~class10/Class%20of%202010/Six%20Flags_files/2004042511484000_six-flags-trip-4-25-2004-078.png'
   }];
 
   return {
