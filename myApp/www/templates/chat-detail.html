@@ -5,23 +5,24 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <ion-list>
-            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat.rides in chat[{{chat.id}}] track by {{chat.id}}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}" back-img="{{chat.face}}" style="height:26%;">
-                <center>
-                    <br>
-                    <div class="content">
-                        <h2><b>{{chat.name}}</b></h2>
-                        <p><b>{{chat.lastText}}</b>
-                        </p>
-                    </div>
-                    <i class="icon ion-chevron-right icon-accessory"></i>
-
-                    <ion-option-button class="button-assertive" ng-click="remove(chat)">
-                        Delete
-                    </ion-option-button>
-                </center>
-            </ion-item>
-        </ion-list>
-  </ion-content>
+    <ion-content class="padding">
+        <img ng-src="{{chat.face}}" style="width: 100%; height: 20%;">
+        <div class="list list-inset">
+            <a ng-click="showPopup()">
+                <div class="item">
+                    {{chat.ride1}}
+                </div>
+            </a>
+            <a ng-click="showPopup2()">
+                <div class="item">
+                    {{chat.ride2}}
+                </div>
+            </a>
+            <a ng-click="showPopup3()">
+                <div class="item">
+                    {{chat.ride3}}
+                </div>
+            </a>
+        </div>
+    </ion-content>
 </ion-view>
