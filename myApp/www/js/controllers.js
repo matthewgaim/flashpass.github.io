@@ -19,6 +19,10 @@ angular.module('starter.controllers', [])
 
 .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats,  $ionicPopup, $timeout) {
     $scope.chat = Chats.get($stateParams.chatId);
+    var cash = 13;
+    //alert(cash);
+    $scope.dadopecash = cash;
+
     // An alert dialog
 
     /*
@@ -50,10 +54,12 @@ angular.module('starter.controllers', [])
   */
  
     $scope.showPopup = function () {
+        cash--;
         $scope.data = {}
 
         // An elaborate, custom popup
         var myPopup = $ionicPopup.show({
+            
             template: '<center><h5>Welcome to {{chat.ride1}}!</h5><p>You may now skip all the lines and show this app for confirmation.</p><img src="http://beam.la/qrcode.png"></center>',
 //            title: 'Welcome to {{chat.ride1}}!',
 //            subTitle: 'You may now skip all the lines and show this app for confirmation.',
@@ -178,6 +184,7 @@ angular.module('starter.controllers', [])
             console.log('Thank you for not eating my delicious ice cream cone');
         });
     };
+    
 })
 
 .controller('AccountCtrl', function ($scope) {
